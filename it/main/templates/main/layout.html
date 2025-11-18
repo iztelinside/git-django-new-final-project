@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,9 +7,32 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">-->
+    <link rel="stylesheet" href="../../static/main/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+
 </head>
 <body>
-{% block content %}
-{% endblock %}
+    <aside>
+
+        <img class="logo_simple" src="{% static 'main/img/mail_icon.svg' %}" alt="LogoImage"/>
+        <p class="logo">itProger!</p>
+        <h3>Navigation</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><img src="{% static 'main/img/home_icon.svg' %}" alt=""><span>Main</span></li></a>
+            <a href="{% url 'about' %}"><li><img src="{% static 'main/img/about_icon.svg' %}" alt=""><span>About Us</span></li></a>
+            <a href="{% url 'contacts' %}"><li><img src="{% static 'main/img/phone_icon.svg' %}" alt=""><span>Contacts</span></li></a>
+<!--            <a href=""><li><i class="fa-solid fa-house"></i>Main!</li></a>-->
+<!--            <a href=""><li><i class="fa-solid fa-bars"></i>About Us!</li></a>-->
+<!--            <a href=""><li><i class="fa-solid fa-phone"></i>Contacts!</li></a>-->
+        </ul>
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
 </body>
 </html>

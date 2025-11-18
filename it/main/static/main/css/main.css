@@ -1,0 +1,126 @@
+body{
+    background: #2c2c2c;
+}
+main .features{
+    display: block;
+    margin: auto;
+    top: 50px;
+    color: white;
+    height:auto;
+    width: 400px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid white;
+    padding: 10px;
+}
+.elements{
+    display: grid;
+    height: auto;
+    color: white;
+}
+.btn-warning{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    height: 50px;
+    width: 120px;
+    background-color: green;
+    color: white;
+    border: 0px solid black;
+    vertical-align: center;
+    margin-bottom: 30px;
+    border-radius:60px;
+}
+aside img{
+    width: 40px;
+    height: 40px;
+    border: 3px solid red;
+    border-radius: 100%;
+    padding: 10px;
+    vertical-align: middle;
+    background: white;
+
+}
+
+.logo_simple{
+    display: block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 0px solid #139a13;
+    margin-right: 20px;
+
+}
+
+.logo{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 20px;
+}
+li{
+    color: #ffffff;
+    font-weight: bold;
+}
+aside {
+    width: 20%;
+    padding: 2.5%;
+    background-color: #181818;
+    border-right: 3px solid #4d4d4d;
+    margin-left: 15px;
+    height: 100vh;
+    color: #fff;
+    float: left;
+    font-family: "Montserrat", Tahoma, Arial;
+
+
+
+}
+
+ul{
+    margin-top: 50px;
+}
+p{
+    color: white;
+}
+a{
+    display: block;
+    margin-top: 40px;
+    height: 60px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    /*padding-top:20px;*/
+    /*padding-bottom: 20px;*/
+
+    vertical-align: middle;
+
+}
+span{
+    margin-left: 20px;
+}
+/*h2,h3,h4{*/
+/*   color: blue;*/
+/*}*/
+/*p{*/
+/*    color: white;*/
+/*}*/
+/*static{*/
+/*    color: green;*/
+/*}*/
+
+li:hover{
+
+    color: #f80202;
+    transform: scale(1.05);
+
+
+}
+a:hover{
+    color: #242f4f;
+    border-top: 1px solid #f80101;
+    border-bottom: 1px solid #ff0000;
+    transform: scale(1.05);
+}
