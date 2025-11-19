@@ -3,7 +3,7 @@ from .models import NewsHome
 
 
 def news_home(request):
-    news = NewsHome.objects.all()
+    news = NewsHome.objects.order_by("title")
     return render(request, 'news/news_home.html', {"news": news})
 # from django.urls import path
 # from . import views

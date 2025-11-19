@@ -9,21 +9,22 @@ Site Today News
         <h1>Site Today News</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quia tempora tenetur totam ut voluptatibus. Cupiditate dolor optio quas!</p>
         <button class="btn btn-warning">News Site Page</button>
+        {% for element in news%}
+                <div class="alert alert-warning">
+                    <h4>{{element.title}}</h4>
+                    <p>{{element.anons_content}}</p>
+                    <p>{{element.full_content}}</p>
+                    <p>{{element.date}}</p>
+                </div>
+
+        {% endfor %}
 
 <!--        The first option for extracting elements from the database-->
         <!--         {{news}}-->
 
 <!--        The second option for extracting elements from the database-->
         <div class="elements">
-            {% for element in news%}
-                <div class="alert alert-warning">
-                    <h4>{{el.title}}</h4>
-                    <p>{{el.anons_content}}</p>
-                    <p>{{el.full_content}}</p>
-                    <p>{{el.date}}</p>
-                </div>
 
-            {% endfor %}
 
 
 
