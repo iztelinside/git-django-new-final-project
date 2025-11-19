@@ -15,7 +15,7 @@ main .features{
 }
 .elements{
     display: grid;
-    height: auto;
+    height: 100px;
     color: white;
 }
 .btn-warning{

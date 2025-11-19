@@ -1,8 +1,13 @@
 from django.shortcuts import render
+from .models import NewsHome
+
+
+def news_home(request):
+    news = NewsHome.objects.all()
+    return render(request, 'news/news_home.html', {"news": news})
 # from django.urls import path
 # from . import views
-def news_home(request):
-    return render(request, 'news/news_home.html')
+
 
 # urlpatterns = [
 #

@@ -15,10 +15,12 @@ class Migration(migrations.Migration):
             name='NewsHome',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100, verbose_name='We are the champions')),
-                ('anons_content', models.TextField(blank=True, max_length=200, verbose_name='Text Content')),
-                ('full_content', models.TextField(blank=True, max_length=500, verbose_name='Full Content')),
-                ('date', models.DateTimeField(auto_now_add=True, verbose_name='Date and Time')),
+                ('title', models.CharField(max_length=100, verbose_name='Название')),
+                ('anons_content', models.TextField(blank=True, max_length=200, verbose_name='Анонс')),
+                ('full_content', models.TextField(blank=True, max_length=500, verbose_name='Статья')),
+                ('date', models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')),
             ],
         ),
     ]
+
+
