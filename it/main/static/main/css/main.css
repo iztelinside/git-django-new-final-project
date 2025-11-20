@@ -1,35 +1,58 @@
 body{
     background: #2c2c2c;
+    font-family: "Montserrat", Arial, Tahoma, "Roboto Thin";
 }
-main .features{
+.features{
     display: block;
-    margin: auto;
+    margin: 0 auto;
     top: 50px;
     color: white;
-    height:auto;
-    width: 400px;
+    width: 600px;
     text-align: center;
     align-content: center;
     border: 1px solid white;
     padding: 10px;
+}
+form{
+    display: block;
+    margin: 0 auto;
+    width: align;
+    margin-top:50px;
+    padding: 30px;
+}
+.form-control{
+    display:block;
+    margin-top:50px;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+
 }
 .elements{
     display: grid;
     height: 100px;
     color: white;
 }
-.btn-warning{
+.btn-warning, .btn{
     display: block;
     margin: 0 auto;
     justify-content: center;
     height: 50px;
-    width: 120px;
-    background-color: green;
     color: white;
     border: 0px solid black;
     vertical-align: center;
     margin-bottom: 30px;
     border-radius:60px;
+}
+.btn{
+    display: block;
+    width: 140px;
+    background-color: #139a13;
+}
+.btn-warning{
+    display: block;
+    width: 120px;
+    background-color: #ab1c1c;
 }
 aside img{
     width: 40px;

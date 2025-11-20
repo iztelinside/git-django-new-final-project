@@ -8,15 +8,14 @@ Site Today News
     <div class="features">
         <h1>Site Today News</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quia tempora tenetur totam ut voluptatibus. Cupiditate dolor optio quas!</p>
-        <button class="btn btn-warning">News Site Page</button>
+        <button class="btn-warning">News Site Page</button>
         {% for element in news%}
-                <div class="alert alert-warning">
+                <div class="alert-warning">
                     <h4>{{element.title}}</h4>
                     <p>{{element.anons_content}}</p>
                     <p>{{element.full_content}}</p>
                     <p>{{element.date}}</p>
                 </div>
-
         {% endfor %}
 
 <!--        The first option for extracting elements from the database-->

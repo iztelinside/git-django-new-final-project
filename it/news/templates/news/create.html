@@ -1,0 +1,41 @@
+{% extends "main/layout.html" %}
+{% block title %}Form News{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>Form News</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.anons_content }}<br>
+            {{ form.full_content }}<br>
+            {{ form.date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Вносить Данные!</button>
+<!--            <input type="text" placeholder="Название статье" class="form-control"><br>-->
+<!--            <input type="text" placeholder="Анонс статьи" class="form-control"><br>-->
+<!--            <textarea class="form-control" placeholder="Текст статьи"></textarea><br>-->
+<!--            <input type="date" class="form-control"><br>-->
+<!--            <input type="time" class="form-control"><br>-->
+<!--            <button class="btn btn-success" type="submit">Вносить Данные!</button>-->
+        </form>
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit quia tempora tenetur totam ut voluptatibus. Cupiditate dolor optio quas!</p>-->
+<!--        <button class="btn btn-warning">News Site Page</button>-->
+<!--        {% for element in news%}-->
+<!--                <div class="alert alert-warning">-->
+<!--                    <h4>{{element.title}}</h4>-->
+<!--                    <p>{{element.anons_content}}</p>-->
+<!--                    <p>{{element.full_content}}</p>-->
+<!--                    <p>{{element.date}}</p>-->
+<!--                </div>-->
+<!--        {% endfor %}-->
+
+<!--&lt;!&ndash;        The first option for extracting elements from the database&ndash;&gt;-->
+<!--        &lt;!&ndash;         {{news}}&ndash;&gt;-->
+
+<!--&lt;!&ndash;        The second option for extracting elements from the database&ndash;&gt;-->
+<!--        <div class="elements">-->
+
+<!--        </div>-->
+
+    </div>
+{% endblock %}
